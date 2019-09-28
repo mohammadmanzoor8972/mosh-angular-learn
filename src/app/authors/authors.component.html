@@ -1,0 +1,17 @@
+<h3>{{authors.length}} Author</h3>
+<ul (click)="onDivClicked()" style="display:none">
+  <li *ngFor="let author of authors">
+    {{author}}
+  </li>
+
+ </ul>
+
+ <p>{{course.title | uppercase}}</p>
+ <p>{{course.students|number}}</p>
+ <p>{{course.rating|number:'1.1-1'}}</p>
+ <p>{{course.price|currency:'INR':true:'3.2-5'}}</p>
+ <p>{{course.releaseDate|date:'dd/MMM/yyyy'}}</p>
+<span>{{text|summary:100}}</span>
+ <input [(ngModel)]="email" (keyup.enter)="onKeyUp()" />
+ <button class="btn btn-primary" [class.active]="isActive" [style.background-color]="isActive ? color : 'green'" (click)="onSave($event)">Save</button>
+

@@ -1,0 +1,8 @@
+.glyphicon{
+    font-size:30px;
+    color:#ccc;
+}
+
+.glyphicon:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,20 @@
+.zippy{
+    border : 1px solid #f5f5f5;
+    border-radius: 2px;
+    margin:5px;
+}
+
+.zippy > .heading{
+background-color:#f5f5f5;
+padding:10px;
+font-size: 1.2em;
+font-weight: bold;
+}
+
+.zippy > .body{
+    padding:10px;
+}
+
+.zippy > .glyphicon{
+    float: right;
+}

@@ -1,0 +1,43 @@
+
+<course-form></course-form>
+
+
+<div style="display:none">
+
+<input type="text" appInputFormat [format]="'lowercase'"/>
+<zippy title="Shiping Details">
+    Shiping Detals contents
+</zippy>
+<zippy title="Course Details">
+    All courses available for nformation technoogy.
+</zippy>
+
+<like
+[likesCount]="tweet.likesCount"
+[isLiked]="tweet.isLiked"
+></like>
+
+
+<panel>
+    <div class="heading">Descripton</div>
+    <div class="body">
+        <h2>Angular</h2>
+        <p>One of the ammazing framework till now</p>
+    </div>
+</panel>
+<panel>
+<div class="heading">Title</div>
+    <div class="body">
+        <h2>Angular</h2>
+        <p>One of the ammazing framework till now</p>
+    </div>
+</panel>
+
+
+<favorite 
+[color]="color" 
+[Free]="isFav" 
+(change)="myCustomFavrt($event)"
+(click)="myCustomClick($event)"
+></favorite>
+</div>
